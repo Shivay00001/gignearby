@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GigNearby - Hire Trusted Workers Near You</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand" onclick="app.navigate('home')">
+                <span class="logo-icon">🔥</span> <span id="nav-brand-text" data-i18n="platform_name">GigNearby</span>
+            </a>
+            <div class="nav-links">
+                <a href="#browse" class="nav-link" data-i18n="browse_workers" onclick="app.navigate('browse')">Browse</a>
+                <a href="#bookings" class="nav-link auth-only hidden" data-i18n="my_bookings" onclick="app.navigate('bookings')">Bookings</a>
+                <button class="lang-toggle" onclick="app.toggleLanguage()" data-i18n="switch_language">हिंदी</button>
+                <div class="auth-buttons" id="auth-buttons">
+                    <button class="btn btn-outline" onclick="app.showLogin()" data-i18n="login">Login</button>
+                    <button class="btn btn-primary" onclick="app.showSignup()" data-i18n="signup">Sign Up</button>
+                </div>
+                <div class="user-menu hidden" id="user-menu">
+                    <img src="" alt="Avatar" id="user-avatar" class="avatar">
+                    <span id="user-name" class="user-name">User</span>
+                    <button class="btn btn-outline btn-sm" onclick="app.logout()" data-i18n="logout">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="app-container">
+        <!-- Rendered Pages go here -->
+    </main>
+
+    <!-- Modals -->
+    <!-- Worker Profile Modal -->
+    <div id="worker-modal" class="modal">
+        <div class="modal-content glass-panel modal-lg">
+            <button class="close-btn" onclick="app.closeModal('worker-modal')">&times;</button>
+            <div id="worker-modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content glass-panel modal-sm">
+            <button class="close-btn" onclick="app.closeModal('auth-modal')">&times;</button>
+            <div id="auth-modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content glass-panel">
+            <button class="close-btn" onclick="app.closeModal('booking-modal')">&times;</button>
+            <div id="booking-modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../shared/constants.js"></script>
+    <script src="../shared/supabase-config.js"></script>
+    <script src="../shared/auth.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
