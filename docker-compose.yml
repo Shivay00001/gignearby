@@ -1,0 +1,1 @@
+version: '3.8'\nservices:\n  app:\n    build: .\n    ports:\n      - "8080:8080"\n
