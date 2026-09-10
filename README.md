@@ -128,3 +128,8 @@ RLS policies ensure each role can only access their own data. Admin has unrestri
 - **Fonts**: Inter (Google Fonts)
 - **Backend**: Supabase (PostgreSQL + Auth + Realtime)
 - **Demo**: localStorage mock database with seeded data
+
+
+## Prerequisites
+- Required environment and dependencies
+
