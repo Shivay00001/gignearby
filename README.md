@@ -133,3 +133,11 @@ RLS policies ensure each role can only access their own data. Admin has unrestri
 ## Prerequisites
 - Required environment and dependencies
 
+
+## 🐳 Docker Support
+
+Run the system seamlessly using Docker:
+
+```bash
+docker compose up --build
+```
