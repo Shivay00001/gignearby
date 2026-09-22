@@ -276,8 +276,7 @@ const app = {
                                 <label style="margin:0">${c.icon} ${c.name}</label>
                                 <input type="number" class="form-control" style="width:80px; text-align:right" value="${c.commission_rate}" disabled>
                             </div>
-                        `).join('');
-    }
+                        `).join('')}
                     </div >
     <div class="mt-4 text-muted text-sm">* Commission rates are currently hardcoded in constants.js for demo.</div>
                 </div >
