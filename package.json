@@ -1,10 +1,10 @@
 {
   "name": "gignearby",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "GigNearby — hyperlocal gig marketplace (customer, worker, admin apps + Supabase backend)",
+  "main": "serve.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node serve.js"
   },
   "author": "Shivay00001",
   "license": "Custom"
