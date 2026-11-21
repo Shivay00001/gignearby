@@ -1,5 +1,7 @@
 # 🔧 GigNearby — Gig Work Platform
 
+Built by [VisionQuantech](https://visionquantech.com) — AI agents, apps & tools for small businesses.
+
 A connected ecosystem of **3 web apps** for hiring nearby workers for physical gigs — plumber, electrician, elderly care, tutoring, cooking, and more — with smart 2-10% commission.
 
 ---
